@@ -1,0 +1,9 @@
+COMMAND LINE CHEATSHEET
+
+* pwd
+* ls
+* cd
+* mkdir
+* rm
+* echo
+* cat

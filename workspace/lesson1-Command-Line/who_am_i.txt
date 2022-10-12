@@ -1,0 +1,3 @@
+Stoked to be here!
+
+I've been developing in Python for a long while now but am basically self-taught. Really excited to take this course to get more sure footing in SQL, data modeling, and software best practices. Writing better code is a constant work in progress!
