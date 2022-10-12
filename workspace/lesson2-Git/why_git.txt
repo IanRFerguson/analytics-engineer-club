@@ -1,0 +1,11 @@
+WHY USE GIT
+
+* Understand the story of your code
+
+* Undo mistakes easily
+
+* Have ONE clean representation of your work ... no more "final.py" "final_final.py" etc
+
+* Code review is a best practice
+
+* Great for collaboration across multiple developers
