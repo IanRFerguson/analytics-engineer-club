@@ -1,0 +1,7 @@
+GIT MENTAL MODEL
+
+* Make a local change
+
+* Group a set of changes into a "commit" ... this is a set of changes that you make to a project
+	** `git add .`
+	** `git commit -m "I made some changes"`
