@@ -4,4 +4,8 @@ GIT MENTAL MODEL
 
 * Group a set of changes into a "commit" ... this is a set of changes that you make to a project
 	** `git add .`
-	** `git commit -m "I made some changes"`
+	** `git commit -m "I made some changes"
+
+* You want to PULL changes before starting work / making other changes
+
+* You want to PUSH changes after your changes are complete (for now)
