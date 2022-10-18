@@ -1,0 +1,44 @@
+Introduction to DBT
+
+* Once a query is stored in a DBT project they are called `models`
+
+* Lots of things to do ... change from views to tables, infer which order to build models in, test / document models
+
+* DBT can generate documentation of your workflow! (Lineage Graphs)
+
+
+##########
+
+
+* What you need
+	** DBT installed locally
+	** DBT project with queries (models)
+	** Connection to data warehouse
+
+`dbt run`
+
+
+##########
+
+
+* `pip install dbt-bigquery`
+
+* `dbt init` to create a project
+	** This creates a YAML file with parameters to fine-tune as you need (name, version, clean_targets, etc.)
+
+* `models` directory should contain your SQL queries
+
+
+##########
+
+
+* You can add configurations one of two ways
+	** In a `config` block at the top of your model
+	** In the relevant YAML file for the project
+
+* You can abstract the dependent models in your project with `{{ ref('filename') }}
+
+* DAG [[ need to define ]]
+	** Boiling water / making coffee analogy
+	** Downstream events (e.g., transformations) depend on both
+	** They happen independently upstream
