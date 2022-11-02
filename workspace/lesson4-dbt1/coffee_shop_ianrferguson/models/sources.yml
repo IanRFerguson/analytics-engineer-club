@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: customer_test
+    description: First try at a sources configuration
+    tables:
+      - name: customers
+        description: Order history for all customers 
+        freshness:
+          warn_after: {count: 6, period: hour}
+          error_after: {count: 48, period: hour}
+
+      - name: monthly
+        description: Aggregated order trends at the month level
+        freshness:
+          warn_after: {count: 10, period: day}
+          error_after: {count: 30, period: day}
