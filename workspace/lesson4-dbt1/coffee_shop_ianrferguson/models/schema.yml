@@ -8,3 +8,10 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: monthly
+    description: Aggregated customer trends
+    columns:
+      - name: first_month
+        tests:
+          - unique
