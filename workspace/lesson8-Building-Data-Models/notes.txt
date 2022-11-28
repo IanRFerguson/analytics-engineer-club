@@ -1,0 +1,26 @@
+Think about the structural tradeoffs between different approaches... Size of table, ease of use for end user, how "cluttered" is your table?
+
+** You model data to implement business logic **
+
+* Decisions that your company makes to try and align on definitions
+* Both at the "grain" level and the "column" level 
+    ** Grain == What counts as an "order"? How are we operationalizing business outcomes
+    ** Column == How do we measure something like revenue? Does it include taxes?
+
+#####
+
+* Most data teams...
+    ** Are source data centric
+    ** Mostly do cleaning work / joining manually
+    ** Often only one query between source data and data powering a dashboard
+
+* The best data teams...
+    ** Are business centric
+    ** Have clear definitions of what one record represents (what's a customer?)
+    ** Intentional about separating source and business logic in transformations
+
+#####
+
+* Distinction between SOURCE and BUSINESS logic
+    ** Source tied to systems that produce data (think transformations, renaming fields for consistency)
+    ** Business logic is more subjective & requires stakeholder input to align on a definition
