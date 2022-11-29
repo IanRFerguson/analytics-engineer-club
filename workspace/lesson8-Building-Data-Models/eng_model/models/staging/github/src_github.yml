@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+  - name: github
+    database: analytics-engineer-club
+    tables:
+      - name: pull_request
+        columns:
+          - name: id
+            tests: 
+              - unique
+              - not_null
+
+      - name: issue
+        columns:
+          - name: id
+            tests: 
+              - unique
+              - not_null
+
+      - name: issue_merged
+        columns:
+          - name: issue_id
+            tests: 
+              - unique
+              - not_null
+
+      - name: repository
+        columns:
+          - name: id
+            tests: 
+              - unique
+              - not_null
