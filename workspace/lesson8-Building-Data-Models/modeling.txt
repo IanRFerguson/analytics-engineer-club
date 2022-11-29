@@ -21,3 +21,21 @@
 #####
 
 4 - Mock the SQL you would need to accomplish this
+
+* Write pseudocode!
+
+* Detail what you need and why you need it
+
+#####
+
+5 - Iterate on your data model
+
+* Dimensions, facts, what you'll *do* with facts (averages, medians, ranges, etc.)
+
+#####
+
+6 - Start sketching out a dbt DAG
+
+* What models / tables feed into the resulting output left to right?
+
+* Start building sources (the left-most parts of our DAG)
