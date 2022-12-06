@@ -39,3 +39,20 @@
 * What models / tables feed into the resulting output left to right?
 
 * Start building sources (the left-most parts of our DAG)
+
+#####
+
+[ LOOK AT THIS AGAIN ]
+
+7 - Declare sources && build staging models
+
+* Add YAML files to your dbt project for your source data
+    ** Ensure any assumptions about your source data is recorded and validated here
+    ** Add information about these sources as you learn more about them
+
+* Staging models clean up your source data into "the shape you wish it came in"
+    ** Same grain as your source data
+    ** Renamed fields, reordered columns, etc.
+    ** Should be tested and documented
+
+* Staging vs. marts??
