@@ -55,4 +55,5 @@
     ** Renamed fields, reordered columns, etc.
     ** Should be tested and documented
 
-* Staging vs. marts??
+* Staging vs. marts
+    ** Think about it like source data vs. data to hand off for business problems
