@@ -50,7 +50,7 @@ with_session_number as (
     select
         *,
 
-        -- FILL IN WITH COMMENTS
+        -- Not sure where the sum is coming from...
         sum(is_new_session) over (
             partition by blended_user_id
             order by timestamp
