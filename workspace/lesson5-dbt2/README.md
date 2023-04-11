@@ -1,4 +1,4 @@
-dbt 201 - Tests, Docs, Sources
+# dbt 201 - Tests, Docs, Sources
 
 * Tets are assertions made about the data in your model
 	** "This column is unique" ... if true, it passes the test
@@ -15,9 +15,6 @@ dbt 201 - Tests, Docs, Sources
 	** logs/dbt.log contains all the queries that dbt runs + additional logging
 		- Recent errors will be at the bottom here
 
-
-##########
-
 * dbt has native documentation tools to generate rich docs
 
 * dbt docs generate
@@ -26,11 +23,8 @@ dbt 201 - Tests, Docs, Sources
 * dbt docs server
 	** Launches localhost with rendered docs
 
-
-##########
-
-* Adding sources tells dbt about the tables in your data warehouse
-
+```sql
+-- Adding sources tells dbt about the tables in your warehouse
+-- Links dependencies between models and their relevant sources
 select * from {{ source('coffee_shop', 'orders') }} as orders;
-
-* Links dependencies between models and their relevant sources
+```
