@@ -69,3 +69,29 @@ where timestamp > (
 )
 ```
 
+* A common approach is to run a full-refresh once a week (e.g., Sunday at 2AM), and run incremental builds in between
+
+## Handling HUGE Data
+
+You can optimize your incremental models by doing the following...
+
+* Preventing full refreshes - `full_refresh = 'false'`
+
+* You may skip the `unique_key` configuration (this slows down the query)
+
+* Skip `where` clauses and reduce complexity!
+
+* Keep the inputs as simple as possible (avoid joins)
+
+* Hold off on window functions until later / downstream models
+
+Consider the separation of **slowly changing dimensions** ... this will prevent you from having to refresh old data
+
+## In Summary
+
+Incremental models introduce tradeoffs...
+
+* Where do you set cutoffs?
+* How do you minizmize complexity?
+
+You need to have an excellent understanding of *how* your data gets updated, especially how reliable your timestamp fields actually are
